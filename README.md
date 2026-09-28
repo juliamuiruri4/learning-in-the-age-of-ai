@@ -5,9 +5,9 @@
 
 AI can remove busywork, but learning still depends on reasoning, recalling, connecting, and focusing. This talk introduces StudySynk: a study tool built around one principle — **Cut extraneous load. Protect Germane load**. In other words, AI does the scaffolding; you do the thinking.
 
-[![Slide 1: Learning in the Age of AI](assets/slide-1.png)](Hack-for-Humanity.pdf)
+[![Slide 1: Learning in the Age of AI](assets/slide-1.png)](index.html#slide-1)
 
-View or download the [PDF deck](Hack-for-Humanity.pdf).
+View the [interactive slides](index.html#slide-1) or download the [PDF deck](Hack-for-Humanity.pdf).
 
 |  |  |
 | --- | --- |

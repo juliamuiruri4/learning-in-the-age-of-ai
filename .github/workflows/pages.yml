@@ -29,8 +29,10 @@ jobs:
       - name: Stage the presentation
         shell: bash
         run: |
-          mkdir -p _site
-          cp index.html Hack-for-Humanity.pdf _site/
+          mkdir -p _site/assets
+          cp index.html deck.js styles.css Hack-for-Humanity.pdf _site/
+          cp assets/slide-1.png _site/assets/
+          cp -R assets/media _site/assets/media
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

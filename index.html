@@ -2,11 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="refresh" content="0; url=Hack-for-Humanity.pdf" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hack for Humanity: Learning in the Age of AI</title>
+    <meta name="description" content="Hack for Humanity: Learning in the Age of AI, presented by Julia Muiruri." />
+    <title>Hack for Humanity: Learning in the Age of AI | Julia Muiruri</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./deck.js"></script>
   </head>
   <body>
-    <p>Opening the <a href="Hack-for-Humanity.pdf">Hack for Humanity PDF deck</a>.</p>
+    <a class="skip-link" href="#deck">Skip controls</a>
+    <div class="app">
+      <header class="chrome">
+        <p class="wordmark">AI COLLECTIVE <span>×</span> QWEN</p>
+        <button type="button" class="help-button" id="help-button" aria-haspopup="dialog" aria-controls="help-dialog">
+          <span aria-hidden="true">?</span><span class="sr-only">Keyboard and touch controls</span>
+        </button>
+      </header>
+      <main class="deck" id="deck" tabindex="-1" aria-label="Hack for Humanity presentation">
+        <section class="slide" data-slide="1" aria-label="Slide 1 of 14: Learning in the Age of AI"><img src="./assets/slide-1.png" alt="Hack for Humanity: Learning in the Age of AI, presented by Julia Muiruri." /></section>
+        <section class="slide" data-slide="2" aria-label="Slide 2 of 14: The question" hidden><img src="./assets/media/slide-02-the-question.png" alt="A question asking whether we want a tool that thinks for us or makes us think." /></section>
+        <section class="slide" data-slide="3" aria-label="Slide 3 of 14: Is AI killing critical thinking?" hidden><img src="./assets/media/slide-03-is-ai-killing-critical-thinking.png" alt="A statistic about students recalling essays written with ChatGPT." /></section>
+        <section class="slide" data-slide="4" aria-label="Slide 4 of 14: Cognitive offloading" hidden><img src="./assets/media/slide-04-offloading-from-me-to-society.png" alt="Cognitive offloading shown as a ripple from an individual to society." /></section>
+        <section class="slide" data-slide="5" aria-label="Slide 5 of 14: Cognitive Load Theory" hidden><img src="./assets/media/slide-05-cognitive-load-theory.png" alt="Cognitive Load Theory diagram contrasting extraneous and germane learning effort." /></section>
+        <section class="slide" data-slide="6" aria-label="Slide 6 of 14: Introducing StudySynk" hidden><img src="./assets/media/slide-06-introducing-studysynk.png" alt="StudySynk: AI does the scaffolding and you do the thinking." /></section>
+        <section class="slide slide--demo" data-slide="7" aria-label="Slide 7 of 14: Switch tax to one place" hidden><img src="./assets/media/slide-07-switch-tax-one-place.png" alt="StudySynk answers the switch tax with one place for study materials." /><video class="demo demo--pair" muted loop playsinline preload="metadata" aria-label="One place demo"><source src="./assets/media/d1-one-place.mp4" type="video/mp4" /></video></section>
+        <section class="slide slide--demo" data-slide="8" aria-label="Slide 8 of 14: Playgrounds" hidden><img src="./assets/media/slide-08-extraneous-load-playgrounds.png" alt="StudySynk playgrounds reduce extraneous cognitive load." /><video class="demo demo--pair" muted loop playsinline preload="metadata" aria-label="Playground demo"><source src="./assets/media/d2-playground.mp4" type="video/mp4" /></video></section>
+        <section class="slide slide--demo" data-slide="9" aria-label="Slide 9 of 14: Pomodoro timer" hidden><img src="./assets/media/slide-09-attention-pomodoro.png" alt="StudySynk Pomodoro timer supports focus and planned breaks." /><video class="demo demo--pair" muted loop playsinline preload="metadata" aria-label="Pomodoro demo"><source src="./assets/media/d3-pomodoro.mp4" type="video/mp4" /></video></section>
+        <section class="slide slide--demo" data-slide="10" aria-label="Slide 10 of 14: Leitner flashcards" hidden><img src="./assets/media/slide-10-memory-leitner-flashcards.png" alt="StudySynk Leitner flashcards support recall and spaced repetition." /><video class="demo demo--pair" muted loop playsinline preload="metadata" aria-label="Leitner flashcards demo"><source src="./assets/media/d4-flashcards.mp4" type="video/mp4" /></video></section>
+        <section class="slide slide--demo" data-slide="11" aria-label="Slide 11 of 14: Goal Map" hidden><img src="./assets/media/slide-11-silos-goal-map.png" alt="StudySynk Goal Map connects learning to personal goals." /><video class="demo demo--pair" muted loop playsinline preload="metadata" aria-label="Goal Map demo"><source src="./assets/media/d5-goalmap.mp4" type="video/mp4" /></video></section>
+        <section class="slide slide--demo" data-slide="12" aria-label="Slide 12 of 14: Under the hood" hidden><img src="./assets/media/slide-12-under-the-hood.png" alt="Architecture diagram showing one StudySynk request end to end." /><video class="demo demo--architecture" muted loop playsinline preload="metadata" aria-label="Request trace demo"><source src="./assets/media/arch-trace.mp4" type="video/mp4" /></video></section>
+        <section class="slide slide--demo" data-slide="13" aria-label="Slide 13 of 14: My development setup" hidden><img src="./assets/media/slide-13-my-dev-setup.png" alt="Julia's development setup using Copilot and Qwen." /><video class="demo demo--activity" muted loop playsinline preload="metadata" aria-label="Model activity demo"><source src="./assets/media/dev-model-activity.mp4" type="video/mp4" /></video></section>
+        <section class="slide" data-slide="14" aria-label="Slide 14 of 14: Close" hidden><img src="./assets/media/slide-14-close.png" alt="Closing slide for Hack for Humanity." /></section>
+      </main>
+      <nav class="controls" aria-label="Presentation controls">
+        <button class="nav-button" id="previous" type="button" aria-label="Previous slide">← PREV</button>
+        <div class="progress-wrap">
+          <span class="counter" id="slide-counter" aria-live="polite">01 / 14</span>
+          <div class="progress-track" id="progress-track" role="progressbar" aria-label="Slide progress" aria-valuemin="1" aria-valuemax="14" aria-valuenow="1"><span class="progress-fill" id="progress-fill"></span></div>
+        </div>
+        <button class="nav-button" id="next" type="button" aria-label="Next slide">NEXT →</button>
+      </nav>
+    </div>
+    <p class="sr-only" id="slide-announcement" aria-live="polite"></p>
+    <dialog class="help-dialog" id="help-dialog" aria-labelledby="help-title">
+      <div class="help-dialog__head"><h2 id="help-title">Presentation controls</h2><button type="button" id="close-help" aria-label="Close controls help">×</button></div>
+      <dl><dt>Right arrow, Page Down, Space</dt><dd>Next slide</dd><dt>Left arrow, Page Up</dt><dd>Previous slide</dd><dt>Home / End</dt><dd>First / last slide</dd><dt>Click the deck</dt><dd>Navigate by left or right side</dd></dl>
+    </dialog>
   </body>
 </html>
